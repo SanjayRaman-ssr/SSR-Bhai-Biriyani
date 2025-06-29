@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+
+    <script src="https://kit.fontawesome.com/52ef63201f.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="overflow-x: hidden;"> 
+    <div class="container">
+
+
+        <!-- nav bar -->
+        <div class="nav_bar">
+
+
+            <div class="logo">
+                <img src="./biriyani_b_spoon_logo-removebg-preview.png" alt="">
+                <h2>Bhai <br> Biriyani</h2>
+            </div>
+            <div class="nav_loc">
+                <div>
+                    <label for="loc">Location</label> <br />
+                    <select name="Location" class="loc_sel" name="Location" id="loc">
+                        <option class="option" value="0">Order Now</option>
+                        <option class="option" value="1">chennai</option>
+                        <option class="option" value="2">Bengalore</option>
+                        <option class="option" value="3">Tiruvannamalai</option>
+                    </select>
+                </div>
+                <p style="display: inline;">delivery</p>
+            </div>
+            <div class="nav_menu">
+                <p>Search</p>
+                <p>Outlets</p>
+                <p>Menu</p>
+                <p>Bulk orders</p>
+                <p>Book A Table</p>
+            </div>
+            <i onclick="menuview()" id="fa-eye" class="fa fa-eye"></i>
+            <div class="order">
+                <button  class="order1">OrderNow</button>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- home page -->
+        <div class="home">
+            <div class="home_left">
+                <h1>Royal <br> biriyani bliss </h1>
+
+                <p class="product_quotes">Savor the rich aroma, bold spices , and melt-in-your-mouth goodness of our
+                    authentic, handcrated biriyani!</p>
+
+                <div class="home_order"><button type="button"> <i class="fa-solid fa-greater-than"></i>
+                        <p> Order_Now</p>
+                    </button>
+                    <div>
+                    <p class="product_name">Mutton Biriyani </p>
+                    <h3 class="product_price">$15</h3>
+                    </div>
+                </div>
+
+                <div>
+                    <div><i class="fa-solid fa-truck-fast"></i>
+                        <p>Freshly <br> Mode</p>
+                    </div>
+
+                    <div><i class="fa-solid fa-truck-fast"></i>
+                        <p>Authentic <br>Flavours</p>
+                    </div>
+
+                    <div><i class="fa-solid fa-truck-fast"></i>
+                        <p>Fast <br> Delivery</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="home_right">
+                <div class="showing_big">
+                    <img src="./image/chicken biriyani.png" alt="">
+                </div>
+                <div class="slide-food">
+                    <div><img class="slide_1" onclick="slide1()" src="./image/chicken biriyani.png" alt=""></div>
+                    <div><img class="slide_2" onclick="slide2()" src="./image/chilli chicken.png" alt=""></div>
+                    <div><img class="slide_3" onclick="slide3()" src="./image/mundi biriayani.png" alt=""></div>
+                    <div><img class="slide_4" onclick="slide4()" src="./image/hydrabad dum biriyani.png" alt=""></div>
+                    <div><img class="slide_5" onclick="slide5()" src="./image/chettinaad chicken.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="taste_box">
+            <h1>A Taste That Tells a Story</h1>
+            <div>
+                <div>
+                    <p>
+                        From the royal of mughies to the busting carries a legacy ofd flavour and culture.
+                        Made with age-old recipes and premium ingredients, every serving is a tribute to authenticity.
+                        Delicious, aromatic and full of flavors, biryani is a dish that tickles the taste buds and
+                        satisfies the soul. It is a culinary experience that brings together the richness of spices, the
+                        succulence of meat or vegetables, and the delicate fragrance of rice, all cooked together to
+                        perfection.
+                    </p>
+                    <div class="email_parent">
+                        <input class="email_sub" type="text" placeholder="Email">
+                    </div> <br>
+                    <label for="comment" id="comment"> Command</label> <br>
+                    <textarea name="" id="comment" cols="50" placeholder="comment here"></textarea>
+                </div>
+                <div class="hover_space">
+                    <img src="./image/chettinaad chicken.png" alt="">
+                    <img src="./image/chicken biriyani.png" alt="">
+                    <img src="./image/chilli chicken.png" alt="">
+                    <img src="./image/spicy stick.png" alt="">
+                    <img src="./image/era biriyani.png" alt="">
+                    <img src="./image/mundi biriayani.png" alt="">
+                    <img src="./image/kerala biriyani.png" alt="">
+                    <img src="./image/hydrabad dum biriyani.png" alt="">
+                    <img src="./image/mundi biriayani.png" alt="">
+                    <img src="./image/kerala biriyani.png" alt="">
+                    <img src="./image/hydrabad dum biriyani.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="spl_biri">
+            <h1>What Makes Our Biriyani special?</h1>
+            <div class="split-main">
+                <div class="split-child split-child1">
+                        <img src="./image/spicy stick.png" alt="">
+                </div>
+                <div class="split-child split-child2" onclick="splitdiv()">
+                     <h1>we are <br> in</h1>
+                </div>
+                <div class="split-child split-child3"  onclick="splitdiv()">
+                    <h1>famous <br> spice</h1>
+                </div>
+                <div class="split-child split-child4">
+                    <h3>We are used finest basmati rice, fresh herbs and premium spices</h3>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="sig_div">
+            <h1>Signature Food Loved By Thousands</h1>
+            <div class="category">
+                <div class="category1">
+                    <button class="biriyani" onclick="biriyani()">Biriyani</button>
+                    <button class="chickenrice" onclick="chickenrice()">Chicken_Rice</button>
+                    <button class="fries" onclick="fries()">Fries</button>
+                    <button class="combo" onclick="combo()">Combo</button>
+                </div>
+
+
+                <div class="category2">
+                    <div class="cate-1">
+                        <div class="prod-1">
+                            <div>
+                                <h1>Hydrabadi Dum Biriyani</h1>
+                                <p>Savor the rich aroma, bold spices , and melt-in-your-mouth goodness of our
+                                    authentic, handcrated biriyani!</p>
+                                <div class="home_order3">
+                                    <button><i class="fa-solid fa-greater-than"></i>
+                                        <p> Order Now </p>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <div class="slide-button">
+                                <i class="fa-solid fa-less-than"></i> <i class="fa-solid fa-greater-than"></i>
+                            </div> -->
+                            <div class="prod-img">
+                                <img class="prod-img-child" src="./image/hydrabad dum biriyani.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="cate-2">
+                        <div class="prod-1">
+                            <div>
+                                <h1>Yangzhou Fried Rice </h1>
+                                <p> Young Chow fried rice, holds a cherished position in the family of Chinese fried
+                                    rice dishes. It’s considered the next-level fried rice, the one that excels in many
+                                    different ways.</p>
+                                <div>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cate-3">
+                        <div class="prod-1">
+                            <div>
+                                <h1></h1>
+                                <p></p>
+                                <div>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cate-4">
+                        <div class="prod-1">
+                            <div>
+                                <h1></h1>
+                                <p></p>
+                                <div>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="review-sec">
+            <h1>What our customer say</h1>
+            <div class="review-main">
+                <div class="review-box1 review-box">
+                    <p>
+                        "Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine
+                        dining. It can be expensive but worth it and they do different deals on different nights"
+                    </p>
+                    <h3>
+                        -Aarav M
+                    </h3>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+
+                <div class="review-box2 review-box">
+                    <p>
+                        "Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine
+                        dining. It can be expensive but worth it and they do different deals on different nights"
+                    </p>
+                    <h3>
+                        -Aarav M
+                    </h3>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+
+                <div class="review-box3 review-box">
+                    <p>
+                        "Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine
+                        dining. It can be expensive but worth it and they do different deals on different nights"
+                    </p>
+                    <h3>
+                        -Aarav M
+                    </h3>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+
+                <div class="review-box4 review-box">
+                    <p>
+                        "Excellent food. Menu is extensive and seasonal to a particularly high standard. Definitely fine
+                        dining. It can be expensive but worth it and they do different deals on different nights"
+                    </p>
+                    <h3>
+                        -Aarav M
+                    </h3>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+          <!-- <div class="custom-shape-divider-bottom-1750574450">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div> -->
+        <div class="curve-div">
+           
+            <div class="mand-div">
+                
+                <h3>A Feast Of Flavours!</h3>
+                <div>
+                    <h1  class="mandi-div-h1-detail">MANDHI</h1>
+                </div>
+                <p class="mandi-div-p-detail"> Chicken Mandi Biryani is served on giant plates; heaps of fluffy orange rice garnished with almonds,
+                    raisins, cashew and fried onions.</p>
+                <div class="home_order3">
+                                    <button><i class="fa-solid fa-greater-than"></i>
+                                        <p> Order Now </p>
+                                    </button></div>
+            </div>
+            <div class="mandi-img">
+                <img class="mandi-img-child" src="./image/mundi biriayani.png" alt="">
+                <!-- <img class="mandi-img-child" src="./image/hydrabad dum biriyani.png" alt=""> -->
+            </div>
+        </div>
+
+
+        <div class="faq-div-main">
+
+            <div class="custom-shape-divider-bottom-1750574451">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+        <div class="faq-div-main2">
+            <div class="faq-1">
+                <h1>FAQs</h1>
+                <p>For any further inquires about our menu, orders, or catering services ,please feel free to get in touch with us</p>
+                <button>bhaibiriyani01@gmail.com</button>
+            </div>
+            <div class="faq-2">
+                <div class="ques-1 ques-common">
+                    <div onclick="ansvisib(0)">
+                        <p>How can i place an order?</p>
+                        <P class="ans-plus-1 ans-plus" onclick="ansvisib(0)">+</P>
+                    </div>
+                     
+                        <p class="hidd-p-1 hidd-p-comm">you can order through direct call , website ,or other delivery apps too</p>
+                    
+                </div>
+                <div class="ques-2 ques-common">
+                    <div onclick="ansvisib(1)">
+                        <p>Do You offer home delivery?</p>
+                         <P  class="ans-plus-2 ans-plus" onclick="ansvisib(1)"> +</P>
+                    </div>
+                     
+                        <p class="hidd-p-2  hidd-p-comm">yes, you can order through direct call , website ,or other delivery apps too</p>
+                    
+                </div>
+                <div class="ques-3 ques-common">
+                    <div onclick="ansvisib(2)">
+                        <p>Can i Customize my biriyani?</p>
+                         <P  class="ans-plus-3 ans-plus" onclick="ansvisib(2)">+</P>
+
+                    </div>
+                     
+                        <p class="hidd-p-3  hidd-p-comm">Yes, we have options for that</p>
+                
+                </div>
+                <div class="ques-4 ques-common">
+                    <div onclick="ansvisib(3)">
+                        <p>Do you have family pack or bulk orders?</p>
+                         <P  class="ans-plus-4 ans-plus" onclick="ansvisib(3)"> +</P>
+                    </div>
+                    
+                        <p class="hidd-p-4  hidd-p-comm">Yes we have family pack and also accept bulk orders</p>
+                
+                </div>
+                <div class="ques-5 ques-common">
+                    <div onclick="ansvisib(4)">
+                        <p>What payment options do you accept?</p>
+                         <P  class="ans-plus-5 ans-plus" onclick="ansvisib(4)">+</P>
+                    </div>
+                     
+                        <p class="hidd-p-5  hidd-p-comm">we accept all type payment "card","Cash","UPI"</p>
+                    
+                </div>
+                <div class="ques-6 ques-common">
+                    <div onclick="ansvisib(5)">
+                        <p>what if i have an issue with my order?</p>
+                         <P  class="ans-plus-6 ans-plus" onclick="ansvisib(5)">+</P>
+                    </div>
+                     
+                        <p  class="hidd-p-6  hidd-p-comm">Rise a complaint through website or customer services</p>
+            
+                </div>
+                <div class="ques-7 ques-common">
+                    <div onclick="ansvisib(6)">
+                        <p>How can i contact customer support?</p>
+                         <P  class="ans-plus-7 ans-plus" onclick="ansvisib(6)">+</P>
+                    </div>
+                    
+                        <p  class="hidd-p-7  hidd-p-comm">You directly contact Us using phone:9926537278</p>
+                
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="ending-card">
+            <div class="ending-card1 ending-comm">
+                 <div class="logo2">
+                <img src="./biriyani_b_spoon_logo-removebg-preview.png" alt="">
+                <h2>Bhai Biriyani</h2>
+            </div>
+            <p>Authentic flavours, rich, spices,
+              and the best biriyani in town  Experience</p>
+            <p>Instagram</p>
+            <p>facebook</p>
+            <p>Youtube</p>
+            </div>
+
+            <div>
+            <div class="ending-card2 ending-comm">
+                <h3>About</h3>
+                <p>About Us </p>
+                <p>Our Specialities</p>
+                <p>News</p>
+                <p>Menu</p>
+            </div>
+            <div class="ending-card3 ending-comm">
+                <h3>Company</h3>
+                <p>Why Bhai biriyani</p>
+                <p>Partner With Us</p>
+                <p>FAQ</p>
+                <p>Blog</p>
+            </div>
+            <div class="ending-card4 ending-comm">
+                 <h3>Support</h3>
+                <p>Account</p>
+                <p>Support center</p>
+                <p>Feedback</p>
+                <p>contact</p>
+                <p>accessibility</p>
+            </div>
+            <div class="ending-card5 ending-comm">
+                 <h3>About</h3>
+                <p>Chennai </p>
+                <p>Coimbatore</p>
+                <p>Madurai</p>
+                <p>Trichy</p>
+            </div>
+            <div class="ending-card6 ending-comm">
+                 <h3>Get in touch</h3>
+                <p>Have questions or Feedback</p>
+                <p>we'd love to hear from you!</p>
+                <input type="email" placeholder="bhaibiriyani01@gmail.com" >
+            </div>
+            </div>
+        </div>
+        <!--container end-->
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
